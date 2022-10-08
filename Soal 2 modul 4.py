@@ -1,5 +1,3 @@
-# Nama : Fathur Rahman
-# NIM : 065002200013
 bulan = int(input("Masukkan Bulan: "))
 tahun = int(input("Masukkan Tahun: "))
 while bulan in (1,3,5,7,8,10,12):
