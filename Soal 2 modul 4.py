@@ -16,5 +16,5 @@ while bulan == 2:
         hari = 28
         print("\npada bulan",bulan,"terdapat",hari,"hari tahun",tahun)
     bulan += 1.5
-if bulan < 0 or bulan == 13 or bulan > 14:
+if bulan <= 0 or bulan == 13 or bulan >= 14:
     print("\ntidak ditemukan,silahkan masukkan angka bulan pada rentang 1 sampai 12")
