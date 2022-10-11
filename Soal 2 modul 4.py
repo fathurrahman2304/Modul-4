@@ -1,20 +1,24 @@
-bulan = int(input("Masukkan Bulan: "))
-tahun = int(input("Masukkan Tahun: "))
-while bulan in (1,3,5,7,8,10,12):
-    hari = 31
-    print("\npada bulan",bulan,"terdapat",hari,"hari tahun",tahun)
-    bulan += 1.5
-while bulan in (4,6,9,11):
-    hari = 30
-    print("\npada bulan",bulan,"terdapat",hari,"hari tahun",tahun)
-    bulan += 1.5
-while bulan == 2:
-    if (tahun % 4 == 0):
-        hari = 29
-        print("\npada bulan",bulan,"terdapat",hari,"hari tahun",tahun)
-    else:
-        hari = 28
-        print("\npada bulan",bulan,"terdapat",hari,"hari tahun",tahun)
-    bulan += 1.5
-if bulan <= 0 or bulan == 13 or bulan >= 14:
-    print("\ntidak ditemukan,silahkan masukkan angka bulan pada rentang 1 sampai 12")
+print("This Program will determine the number of days of a given a month")
+print("Enter -1 to stop the program")
+bulan = int(input("Enter the month(1-12): "))
+
+while bulan >= 0 or bulan < -1:
+    if bulan >= 13 or bulan == 0 or bulan < -1:
+        print("Invalid value entered : ",bulan)
+    elif bulan in (1,3,5,7,8,10,12):
+        print("There are 31 days in the month")
+    elif bulan in (4,6,9,11):
+        print("There are 30 days in the month")
+    elif bulan == 2:
+        tahun = int(input("Please enter the year (e.g., 2021): "))
+        if (tahun % 4 == 0 ):
+                print("There are 29 days in the month")
+                bulan += 1
+        else:
+                print("There are 28 days in the month")
+                bulan += 1
+    print("Enter -1 to stop the program")
+    bulan = int(input("Enter the month(1-12): "))
+while bulan == -1:
+    print("Terima kasih telah menggunakan program saya. Sampai berjumpa lagi")
+    bulan += 1
