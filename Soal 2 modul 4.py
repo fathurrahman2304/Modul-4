@@ -13,10 +13,8 @@ while bulan >= 0 or bulan < -1:
         tahun = int(input("Please enter the year (e.g., 2021): "))
         if (tahun % 4 == 0 ):
                 print("There are 29 days in the month")
-                bulan += 1
         else:
                 print("There are 28 days in the month")
-                bulan += 1
     print("Enter -1 to stop the program")
     bulan = int(input("Enter the month(1-12): "))
 while bulan == -1:
